@@ -9,9 +9,9 @@
 <br>
 *&nbspMaven 3.6.3;
 <br>
-*&nbspHeroku (aplicação de nome peoplemanagementapi-dio);
+*&nbspHeroku (aplicação de nome expertos-tech-criptografia);
 <br>
-*&nbspGitHub (repositório samucaopcao/peopleManagementAPI);</blockquote>
+*&nbspGitHub (repositório samucaopcao/expertos-tech-criptografia);</blockquote>
 <br>
 <h4>:sunglasses:&nbsp Lembretes:</h4>
 <br>
