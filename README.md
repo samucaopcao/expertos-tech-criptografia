@@ -25,3 +25,5 @@
 <br><br>
 *&nbspAo acessar o link http://localhost:8080/h2-console devemos preencher os dados na tela abaixo conforme os<br>&nbsp&nbspdados presentes no application.properties 
 <img width="342" alt="Conexao_H2" src="https://user-images.githubusercontent.com/59769434/144733814-e9f94ea4-f641-4c8c-8ceb-c140f8d55982.png" align="center">
+<br>
+*&nbspPara a criação do GUID utilizamos o site https://www.guidgenerator.com/
