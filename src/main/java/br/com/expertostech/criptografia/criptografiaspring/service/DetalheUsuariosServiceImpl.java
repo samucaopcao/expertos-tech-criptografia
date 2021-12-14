@@ -10,6 +10,10 @@ import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+/**
+ * Serviço responsável pela consulta
+ * e validação da senha do usuário
+ */
 @Component
 public class DetalheUsuariosServiceImpl implements UserDetailsService {
 
@@ -19,6 +23,10 @@ public class DetalheUsuariosServiceImpl implements UserDetailsService {
         this.usuarioRepository = usuarioRepository;
     }
 
+    /**
+     * Método responsável pela consulta
+     * do usuário
+     */
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
        Optional<UsuarioModel> usuario = usuarioRepository.findByLogin(username);
