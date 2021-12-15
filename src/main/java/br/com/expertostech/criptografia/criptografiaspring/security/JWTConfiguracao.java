@@ -43,17 +43,24 @@ public class JWTConfiguracao extends WebSecurityConfigurerAdapter {
          *  nessa solicitação de login , para qualquer outra solicitação usaremos
          *  ".anyRequest().authenticated()" para dizer que desejamos que esteja
          *  autenticado.
-         *  Por fim usamos os dois filtros para validar a autenticação e outro
-         *  para efetuar a validação
+         *  Já o .antMatchers("/h2-console/**").permitAll() é para uso do DB H2
+         *  Usamos os dois filtros para validar a autenticação e outro
+         *  para efetuar a validação (addFilter(new JWTAutenticarFilter e
+         *  addFilter(new JWTValidarFilter)
+         *  .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+         *  o comando acima não salva status no servidor.
+         *   .and().headers().frameOptions().sameOrigin() é para uso do DB H2
          */
 
         http.csrf().disable().authorizeRequests()
                 .antMatchers(HttpMethod.POST, "/login").permitAll()
+                .antMatchers("/h2-console/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilter(new JWTAutenticarFilter(authenticationManager()))
                 .addFilter(new JWTValidarFilter(authenticationManager()))
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS)
+                .and().headers().frameOptions().sameOrigin();
     }
 
     /**
