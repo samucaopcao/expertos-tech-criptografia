@@ -36,10 +36,9 @@
 <br><br>
 *&nbsp<b>POST - Salvar:</b> http://localhost:8080/api/usuario/salvar<br>
 *&nbspExemplo de Body:
-<br>
+<br><br>
 {<br>
 "login": "sasuke",<br>
 "password": "teste"<br>
-}<br>
-<br>
+}<br><br>
 &nbsp<b>POST - Obter Token:</b> http://localhost:8080/login
