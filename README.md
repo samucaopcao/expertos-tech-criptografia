@@ -1,7 +1,7 @@
 # Sejam bem vindos(as) ao meu repositório : expertos-tech-criptografia
 
 <br>
-😃&nbsp&nbspEste repositório baseia-se em um BootCamp do Santander o qual cria uma API REST de Gerenciamento de Pessoas.
+😃&nbsp&nbspEste repositório baseia-se em um exercicio do Canal Expertos Tech o qual implemente criptografia e o uso de JWT.
 <br><br>
 <h4>&nbspNesse projeto utilizamos:</h4>
 <br>
