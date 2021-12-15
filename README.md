@@ -27,3 +27,19 @@
 <img width="342" alt="Conexao_H2" src="https://user-images.githubusercontent.com/59769434/144733814-e9f94ea4-f641-4c8c-8ceb-c140f8d55982.png" align="center">
 <br>
 *&nbspPara a criação do GUID utilizamos o site https://www.guidgenerator.com/
+
+<h4>&nbsp&nbspEnd Points - PostMan</h4>
+<br>
+*&nbsp<b>GET - Listar Todos:</b> http://localhost:8080/api/usuario/listarTodos
+<br><br>
+*&nbsp<b>GET - Validar Senha:</b> http://localhost:8080/api/usuario/validarSenha?login=sasuke&password=teste
+<br><br>
+*&nbsp<b>POST - Salvar:</b> http://localhost:8080/api/usuario/salvar<br>
+*&nbspExemplo de Body:
+<br>
+{<br>
+"login": "sasuke",<br>
+"password": "teste"<br>
+}<br>
+<br>
+&nbsp<b>POST - Obter Token:</b> http://localhost:8080/login
